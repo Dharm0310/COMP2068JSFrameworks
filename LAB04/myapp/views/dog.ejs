@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog</title>
+    <style>
+        /* CSS styles for header.ejs in dog page */
+        header {
+            background-color: #6495ED; /* Cornflower blue */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    
+        h1 {
+            margin: 0;
+        }
+    
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+    
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+    
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <%- include('header') %>
+    <h1>Dog</h1>
+    <img src="/images/dog.jpg" alt="Dog">
+    <p>The domestic dog is a domesticated descendant of the wolf, characterized by an upturning tail. A member of the Canidae family, this furry friend has been selectively bred over millennia for various behaviors, sensory capabilities, and physical attributes.</p>
+    <p>Scientific Name: Canis lupus familiaris</p>
+</body>
+</html>

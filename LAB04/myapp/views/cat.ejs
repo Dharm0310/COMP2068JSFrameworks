@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat</title>
+    <style>
+        /* Advanced CSS specific to cat.ejs */
+        body {
+            background-color: #ffe6e6;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .cat-info {
+            color: #666;
+            text-align: justify;
+            margin-top: 20px;
+        }
+        .cat-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css"> <!-- Link to shared styles -->
+</head>
+<body>
+    <% include header %>
+    <div class="container">
+        <h1>Cat</h1>
+        <img src="/images/cat.jpg" alt="Cat" class="cat-image">
+        <p class="cat-info">The cat, often referred to as the domestic cat to distinguish it from other felids and felines, is a small carnivorous mammal that is valued by humans for its companionship and its ability to hunt vermin and household pests. Scientific Name: Felis catus</p>
+    </div>
+</body>
+</html>

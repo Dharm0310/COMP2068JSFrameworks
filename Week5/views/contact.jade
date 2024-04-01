@@ -1,0 +1,36 @@
+extends layout
+  
+block content
+    .container.mt-5
+      // Navigation Bar
+      nav.navbar.navbar-expand-lg.navbar-light.bg-light
+        a.navbar-brand(href='#') Bootstrap Contact Page
+      // Contact Form Section
+      .row
+        .col-md-8.offset-md-2
+          h2 Contact Us
+          form(action = "contact" method = "post")
+            // Name Input
+            .form-group
+              label(for='name') Name
+              input#name.form-control(type='text' placeholder='Your Name' required='')
+            // Email Input
+            .form-group
+              label(for='email') Email
+              input#email.form-control(type='email' placeholder='Your Email' required='')
+            // Subject Input
+            .form-group
+              label(for='subject') Subject
+              input#subject.form-control(type='text' placeholder='Subject' required='')
+            // Message Textarea
+            .form-group
+              label(for='message') Message
+              textarea#message.form-control(rows='5' placeholder='Your Message' required='')
+            // Submit Button
+            button.btn.btn-primary(type='submit') Submit
+    //- // Bootstrap JS and dependencies (jQuery, Popper.js)
+    //- script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+    //- script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js')
+    //- script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+
+//-     h1 contact page 

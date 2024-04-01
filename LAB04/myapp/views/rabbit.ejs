@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabbit</title>
+    <style>
+        /* Advanced CSS specific to rabbit.ejs */
+        body {
+            background-color: #ffe6e6;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .animal-info {
+            color: #666;
+            text-align: justify;
+            margin-top: 20px;
+        }
+        .animal-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <%- include('header') %>
+    <h1>Rabbit</h1>
+    <img src="/images/rabbit.jpg" alt="Rabbit" class="animal-image">
+    <p>Rabbits are small mammals in the family Leporidae, found in several parts of the world. They are known for their long ears, short tails, and strong hind legs, which allow them to hop quickly.</p>
+    <p>Scientific Name: Oryctolagus cuniculus</p>
+</body>
+</html>
